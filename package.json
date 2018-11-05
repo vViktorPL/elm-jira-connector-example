@@ -1,0 +1,20 @@
+{
+  "name": "elm-jira-connector-example",
+  "version": "1.0.0",
+  "description": "Example for vViktorPL/elm-jira-connector Elm package",
+  "main": "server/server.js",
+  "repository": "git@github.com:vViktorPL/elm-jira-connector-example.git",
+  "author": "Wiktor Toporek <wtoporek@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "elm": "^0.19.0-bugfix2",
+    "express": "^4.16.4",
+    "express-http-proxy": "^1.4.0",
+    "opn": "^5.4.0",
+    "prompt": "^1.0.0"
+  },
+  "scripts": {
+    "start": "server/setup.js && elm make src/Main.elm --output=server/static/index.html && server/server.js"
+  }
+}
