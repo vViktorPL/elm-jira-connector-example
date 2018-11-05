@@ -6,3 +6,8 @@ This is an example app using
 Beside Elm code of an app, there is also simple server implementation which is used
 to proxy JIRA REST API requests so there is no CORS issue 
 (unfortunately, JIRA API does not respond with `Access-Control-Allow-Origin: *` header).
+
+## Build & run
+```bash
+yarn install && yarn start
+```
